@@ -4,11 +4,11 @@ Everything available in the Penguin team Claude Code setup.
 
 ---
 
-## 1. SKILLS (40 total)
+## 1. SKILLS (50 total)
 
 Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate automatically when relevant — you don't need to invoke them manually.
 
-### Development & Code Quality (17 skills)
+### Development & Code Quality (18 skills)
 
 | Skill | When it activates | What it does |
 |-------|-------------------|--------------|
@@ -29,8 +29,9 @@ Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate
 | **strategic-compact** | Long sessions | Suggests context compaction at logical intervals |
 | **eval-harness** | Evaluating session quality | Formal evaluation framework for Claude Code sessions |
 | **continuous-learning-v2** | Always (via hooks) | Observes your sessions, learns patterns, evolves into new skills |
+| **gstack** | QA testing, site dogfooding | Headless browser QA — navigate pages, test flows, take screenshots, verify deployments (by Garry Tan / Y Combinator) |
 
-### Architecture & Patterns (6 skills)
+### Architecture & Patterns (7 skills)
 
 | Skill | When it activates | What it does |
 |-------|-------------------|--------------|
@@ -40,6 +41,7 @@ Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate
 | **deployment-patterns** | CI/CD, Docker, production | Deployment workflows, health checks, rollback strategies |
 | **security-review** | Auth, secrets, APIs, payments | Comprehensive security checklist (OWASP top 10) |
 | **react-portal-modals** | Modals/drawers in dashboards | Prevents CSS stacking context issues with portals |
+| **frontend-design** | Building web UI/pages | Full design thinking process — creates distinctive, production-grade interfaces (Anthropic official) |
 
 ### Content & Marketing (8 skills)
 
@@ -54,13 +56,17 @@ Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate
 | **penguin-blog-publisher** | Penguin blog articles | AI generation → image creation → Shopify draft publishing |
 | **brand-guidelines** | Brand consistency | Color systems, typography, logo rules, tone matrix |
 
-### Media & Design (3 skills)
+### Media & Design (7 skills)
 
 | Skill | When it activates | What it does |
 |-------|-------------------|--------------|
 | **generate-image** | Need images/illustrations | Uses Google Gemini 2.5 Flash for image generation |
 | **logo-designer** | Logo design requests | SVG-based logo design and iteration |
 | **transcribe-video** | Video URL to text | Downloads video, transcribes with Whisper, translates |
+| **canvas-design** | Posters, visual art | Creates visual art, posters, compositions as real PNG/PDF files (Anthropic official) |
+| **theme-factory** | Styling any artifact | 10 professional themes with curated palettes + font pairings (Anthropic official) |
+| **pdf** | PDF document creation | Generates professional PDF documents (Anthropic official) |
+| **web-artifacts-builder** | Interactive web artifacts | Creates self-contained interactive web artifacts (Anthropic official) |
 
 ### Team & Communication (2 skills)
 
@@ -69,7 +75,7 @@ Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate
 | **notify-team** | After deploys/major changes | Generates team notification with change summary and links |
 | **slack-messaging** | Slack interactions | Send/read Slack messages from CLI |
 
-### Framework & Meta (4 skills)
+### Framework & Meta (8 skills)
 
 | Skill | When it activates | What it does |
 |-------|-------------------|--------------|
@@ -77,6 +83,10 @@ Skills are intelligent workflows that live in `~/.claude/skills/`. Most activate
 | **writing-skills** | Creating/editing skills | Guides skill authoring with best practices |
 | **mcp-cli** | Need external tools on-demand | Discovers MCP tools without pre-loading everything |
 | **update-agents-guide** | AGENTS.md needs refresh | Updates the agent guide documentation |
+| **skill-creator** | Creating/improving skills | Create, modify, test, and benchmark skills with evals (Anthropic official) |
+| **mcp-builder** | Building MCP servers | Creates MCP servers from scratch with best practices (Anthropic official) |
+| **cli-anything** | Making software agent-native | Turns any GUI application into a CLI that AI agents can control |
+| **cli-hub-meta-skill** | Discovering agent CLIs | Browse catalog of agent-native CLIs for professional software |
 
 ---
 
@@ -302,10 +312,10 @@ tdd-workflow              → activates when implementing
 
 | Category | Count |
 |----------|-------|
-| Skills | 40 |
+| Skills | 50 |
 | Commands | 29 |
 | Plugins | 6 |
 | Hooks | 6 |
 | AIOX Agents | 13 (per-project) |
 | Project Rules | 10 (per-project) |
-| **Total capabilities** | **~104** |
+| **Total capabilities** | **~114** |
